@@ -1,0 +1,16 @@
+{
+  "name": "commcare-desktop",
+  "version": "0.3.0",
+  "description": "A CommCare client for the Windows desktop",
+  "main": "./app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "Ryan Barber",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "electron": "^11.0.1"
+  }
+}

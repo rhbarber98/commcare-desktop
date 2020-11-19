@@ -1,3 +1,9 @@
+# IDE
+.idea/
+
+# Builds
+.out/
+
 # Logs
 logs
 *.log

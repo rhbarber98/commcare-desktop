@@ -1,0 +1,18 @@
+body {
+    background-color: slategray;
+    color: lightgray;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    font-size: small;
+}
+.splashContent {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Titillium Web, sans-serif;
+    font-size: medium;
+    color: lightgray;
+    background-color: slategray;
+}

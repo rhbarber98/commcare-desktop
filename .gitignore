@@ -2,7 +2,7 @@
 .idea/
 
 # Builds
-.out/
+out/
 
 # Logs
 logs

@@ -1,14 +1,38 @@
 let { app, BrowserWindow } = require('electron')
+let mainWindow
 
 function createMainWindow () {
-    let mainWindow = new BrowserWindow({
-        width: 800,
-        height: 600,
+    mainWindow = new BrowserWindow({
+        width: 1200,
+        height: 800,
         webPreferences: {
-            nodeIntegration: true
-        }
+            nodeIntegration: false,
+            contextIsolation: true,
+        },
+        autoHideMenuBar: true,
+        title: 'CommCare for Windows Desktop',
+        show: false
     })
-    mainWindow.loadURL('https://commcarehq.org/accounts/login')
+    mainWindow.loadURL('https://commcarehq.org/accounts/login').then()
 }
 
-app.whenReady().then(createMainWindow)
+function createSplashWindow () {
+    let splashWindow = new BrowserWindow({
+        width: 1200,
+        height: 800,
+        webPreferences: {
+            nodeIntegration: false,
+            contextIsolation: true,
+        },
+        autoHideMenuBar: true,
+        title: 'CommCare for Windows Desktop'
+    })
+    splashWindow.loadFile('./app/index.html').then(createMainWindow())
+    mainWindow.on('ready-to-show', function() {
+        mainWindow.show()
+        splashWindow.close()
+    })
+
+}
+
+app.whenReady().then(createSplashWindow)

@@ -1,4 +1,4 @@
-<h1 align="center">CommCare for Windows Desktop</h1>
+<h1 align="center">CommCare for Desktop</h1>
 
 A CommCare desktop client built with Electron.js
 

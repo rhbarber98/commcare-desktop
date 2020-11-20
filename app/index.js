@@ -1,6 +1,3 @@
-// CommCare Desktop Client for Windows
-// Developed by Ryan Barber for the New York State Department Of Health
-
 let { app, BrowserWindow } = require('electron'),
     mainWindow,
     splashWindow
@@ -19,7 +16,7 @@ function createMainWindow () {
     })
     mainWindow.loadURL('https://commcarehq.org/accounts/login').then()
     mainWindow.webContents.on('did-finish-load', () => {
-        mainWindow.setTitle('CommCare Desktop Client (Version 0.4.0)')
+        mainWindow.setTitle('CommCare Desktop 0.4.1')
     })
 }
 function createSplashWindow () {

@@ -4,6 +4,7 @@ body {
     text-align: center;
     font-family: "Titillium Web", sans-serif;
     font-size: small;
+    user-select: none;
 }
 .splashContent {
     text-align: center;

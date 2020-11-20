@@ -1,7 +1,7 @@
 {
   "name": "commcare-desktop",
-  "version": "0.4.0",
-  "description": "A CommCare desktop client",
+  "version": "0.4.1",
+  "description": "A CommCare desktop client built with Electron",
   "main": "./app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,8 +10,11 @@
     "make": "electron-forge make"
   },
   "author": "Ryan Barber",
-  "license": "UNLICENSED",
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rhbarber98/commcare-desktop"
+  },
+  "license": "AGPL-3.0",
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.54",
     "@electron-forge/maker-deb": "^6.0.0-beta.54",

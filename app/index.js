@@ -14,7 +14,8 @@ function createMainWindow () {
             contextIsolation: true,
         },
         autoHideMenuBar: true,
-        show: false
+        show: false,
+        icon: __dirname + './assets/commcare_QJL_icon.ico'
     })
     mainWindow.loadURL('https://commcarehq.org/accounts/login').then()
     mainWindow.webContents.on('did-finish-load', () => {
@@ -30,7 +31,8 @@ function createSplashWindow () {
             contextIsolation: true,
         },
         resizable: false,
-        frame: false
+        frame: false,
+        icon: __dirname + './assets/commcare_QJL_icon.ico'
     })
     splashWindow.loadFile('./app/index.html').then(createMainWindow())
     mainWindow.on('ready-to-show', function() {

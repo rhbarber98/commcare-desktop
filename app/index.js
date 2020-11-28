@@ -25,11 +25,11 @@ function createMainWindow () {
         },
         autoHideMenuBar: true,
         show: false,
-        icon: __dirname + './assets/commcare_QJL_icon.ico'
+        icon: __dirname + './assets/cc.ico'
     })
     mainWindow.loadURL('https://commcarehq.org/accounts/login').then()
     mainWindow.webContents.on('did-finish-load', () => {
-        mainWindow.setTitle('CommCare Desktop 0.4.1')
+        mainWindow.setTitle('CommCare Desktop Client')
     })
 }
 function createSplashWindow () {
@@ -42,7 +42,7 @@ function createSplashWindow () {
         },
         resizable: false,
         frame: false,
-        icon: __dirname + './assets/commcare_QJL_icon.ico'
+        icon: __dirname + './assets/cc.ico'
     })
     splashWindow.loadFile('./app/index.html').then(createMainWindow())
     mainWindow.on('ready-to-show', function() {

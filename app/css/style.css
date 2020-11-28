@@ -1,6 +1,6 @@
 body {
-    background-color: slategray;
-    color: lightgray;
+    background-color: white;
+    color: dodgerblue;
     text-align: center;
     font-family: "Titillium Web", sans-serif;
     font-size: small;
@@ -14,6 +14,6 @@ body {
     transform: translate(-50%, -50%);
     font-family: Titillium Web, sans-serif;
     font-size: medium;
-    color: lightgray;
-    background-color: slategray;
+    color: dodgerblue;
+    background-color: white;
 }
